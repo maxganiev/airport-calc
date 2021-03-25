@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js" defer=""></script>
+    <title>Калькулятор тарифов</title>
+  </head>
+  <body>
+    <section id="section-main">
+      <div class="logo-label">
+        <h4 class="text-in-logo">
+          powered by ganiev team <span class="tm-span">&trade;</span>
+        </h4>
+      </div>
+      <div class="container-visible">
+        <h4>Выберите страну вылета</h4>
+        <select id="select-pol">
+          <option value="text">CN</option>
+          <option value="text">KOR</option>
+        </select>
+        <button class="btn-choose">Выбрать</button>
+      </div>
+      <div class="container-hidden">
+        <h5 class="font-top">
+          Для возврата в предыдущее меню обновите страницу
+        </h5>
+        <h4>Выберите аэропорт прилета</h4>
+        <select id="select-pod">
+          <option value="text">SVO1</option>
+          <option value="text">SVO2</option>
+          <option value="text">DME</option>
+          <option value="text">LED</option>
+        </select>
+        <h4>Введите текущий курс RUB/USD</h4>
+        <input
+          type="number"
+          id="input-currency"
+          placeholder="Надеемся, он меньше 100..."
+          step="0.01"
+        />
+        <h4>Введите вес в кг</h4>
+        <input
+          type="number"
+          id="input-weight"
+          placeholder="Например, 1000"
+          step="0.01"
+        />
+        <h4>Введите объем в СВМ</h4>
+        <input
+          type="number"
+          id="input-vol"
+          placeholder="Допустим, 1.4"
+          step="0.01"
+        />
+
+	<h4>Укажите размер пошлины</h4>
+        <input
+          type="number"
+          id="input-per"
+          placeholder="10"
+         />
+
+        <h4>Введите кол-во полных дней хранения</h4>
+        <input
+          type="number"
+          id="input-days"
+          placeholder="Пусть будет 2"
+          step="0.01"
+        />
+        <button class="btn-calc">Рассчитать</button>
+        <p class="print-awb"></p>
+        <p class="disclaimer">
+          Внимание! Расчеты носят приблизительный характер. НДС 20% включено.
+          Ставки фрахта носят сезонный характер.
+          Кроме того, на них лучше ориентироваться для груза весом
+          <b>>= 100кг</b>. Для грузов меньших весов расчеты будут неточны!
+          <br />Тарифы на услуги аэропортов взяты с официальных сайтов
+          аэропортов и действительны на август 2020. Актуальность тарифов
+          необходимо уточнять.
+        </p>
+      </div>
+    </section>
+</body>
+</html>
